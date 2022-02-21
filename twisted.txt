@@ -1,0 +1,55 @@
+# from twisted.protocols.sip import Proxy, MessagesParser, URL, parseViaHeader, parseAddress
+# from twisted.internet import reactor
+# from twisted.internet.protocol import ServerFactory
+#
+# ip_adresy = dict()
+#
+#
+# def getName(name):
+#     x = name.find('@')
+#     return name[5:x]
+#
+#
+# class SIPProxy(Proxy):
+#     Proxy.debug = True
+#
+#     def handle_request(self, message, addr):
+#         print(message.toString())
+#         if message.method == 'INVITE':
+#             print(addr)
+#
+#             name = getName(message.headers["to"][0])
+#             destAddr = URL(host=ip_adresy[name][0], port=ip_adresy[name][1])
+#
+#             print(ip_adresy[name][0])
+#             print(ip_adresy[name][1])
+#
+#             # self.sendMessage(destAddr, message)
+#
+#             # self.deliverResponse(self.responseFromRequest(100, message))
+#             # self.deliverResponse(self.responseFromRequest(180, message))
+#             # self.deliverResponse(self.responseFromRequest(200, message))
+#             #
+#             # self.deliverResponse(self.responseFromRequest(302, message))
+#
+#         if message.method == 'REGISTER':
+#
+#             self.deliverResponse(self.responseFromRequest(200, message))
+#
+#             print(addr)
+#
+#             name = getName(message.headers["from"][0])
+#
+#             print(name)
+#
+#             if name not in ip_adresy:
+#                 ip_adresy[name] = addr
+#
+#             print(ip_adresy)
+#
+#
+# reactor.listenUDP(5060, SIPProxy('147.175.176.85', 5060))
+# # reactor.listenUDP(6000, SIPProxy('126.0.0.1', 6000))
+# # reactor.listenUDP(6000, SIPProxy('147.175.176.85', 6000))
+# # reactor.listenUDP(5060, SIPProxy('126.0.0.1', 5060))
+# reactor.run()
