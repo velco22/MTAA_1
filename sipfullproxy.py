@@ -405,10 +405,11 @@ class UDPHandler(socketserver.BaseRequestHandler):
         if rx_request_uri.search(request_uri) or rx_code.search(request_uri):
             showtime()
             call = request_uri[:request_uri.find(" ")]
-            if call in ['INVITE', 'BYE', 'CANCEL'] or request_uri == 'SIP/2.0 603 Decline':
+            if call in ['INVITE', 'BYE', 'CANCEL', 'ACK'] or request_uri == 'SIP/2.0 603 Decline':
+                call_to = list(filter(lambda x: 'To: ' in x, self.data))
                 call_from = list(filter(lambda x: 'From: ' in x, self.data))
                 call_id = list(filter(lambda x: 'Call-ID: ' in x, self.data))
-                logging.info(">>> " + request_uri + ' ' + call_from[0] + ' ' + call_id[0])
+                logging.info(">>> " + request_uri + ' ' + call_to[0] + ' ' + call_from[0] + ' ' + call_id[0])
             logging.debug("---\n>> server received [%d]:\n%s\n---" %  (len(data),data))
             logging.debug("Received from %s:%d" % self.client_address)
             self.processRequest()
