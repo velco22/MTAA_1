@@ -9,9 +9,9 @@ logging.basicConfig(format='%(asctime)s:%(levelname)s:%(message)s', filename='pr
 
 ipaddress = str()
 
-q = input("Pre ziskanie IP adresy pre server zadajte Y pre zadanie IP adresy nieco zadajte: ")
+q = input("A - pre automaticke ziskanie IP adresy\nLubovolna klavesa - pre manualne zadanie IP adresy\n")
 
-if q == 'Y' or q == 'y':
+if q == 'A' or q == 'a':
     hostname = socket.gethostname()
     ipaddress = socket.gethostbyname(hostname)
     if ipaddress == "127.0.0.1":
