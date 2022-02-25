@@ -58,3 +58,14 @@
 2022-02-23 20:57:45:INFO:>>> ACK sip:slon@147.175.190.171:51162;transport=UDP SIP/2.0 To: <sip:slon@147.175.176.85>;tag=fa418838 From: <sip:Patrik-NB-Linphone@147.175.176.85>;tag=B7~YNLBiC Call-ID: wsz~iEIANb
 2022-02-23 20:57:54:INFO:>>> BYE sip:slon@147.175.190.171:51162;transport=UDP SIP/2.0 To: <sip:slon@147.175.176.85>;tag=fa418838 From: <sip:Patrik-NB-Linphone@147.175.176.85>;tag=B7~YNLBiC Call-ID: wsz~iEIANb
 2022-02-23 20:57:58:INFO:>>> BYE sip:mobil@147.175.190.171:49047;transport=udp SIP/2.0 To: <sip:mobil@147.175.176.85>;tag=M3For7Y From: <sip:Patrik-NB-Linphone@147.175.176.85>;tag=311FiuZi1 Call-ID: EDBSRLqdGe
+2022-02-24 08:12:31:INFO:>>> INVITE sip:mobil@147.175.161.216:5060 SIP/2.0 To: sip:mobil@147.175.161.216 From: <sip:Patrik-NB-Linphone@147.175.161.216>;tag=1mUKd1yhA Call-ID: vxm3Mv0hWa
+2022-02-24 08:12:39:INFO:>>> SIP/2.0 603 Decline To: <sip:mobil@147.175.161.216>;tag=995Xd-C From: <sip:Patrik-NB-Linphone@147.175.161.216>;tag=1mUKd1yhA Call-ID: vxm3Mv0hWa
+2022-02-24 08:12:39:INFO:>>> ACK sip:mobil@147.175.161.216:5060 SIP/2.0 To: <sip:mobil@147.175.161.216>;tag=995Xd-C From: <sip:Patrik-NB-Linphone@147.175.161.216>;tag=1mUKd1yhA Call-ID: vxm3Mv0hWa
+2022-02-24 12:45:41:INFO:>>> INVITE sip:Patrik-NB-Linphone@147.175.176.85 SIP/2.0 To: sip:Patrik-NB-Linphone@147.175.176.85 From: <sip:mobil@147.175.176.85>;tag=ishJ6BZku Call-ID: 5B1~F8Mzix
+2022-02-24 12:45:45:INFO:>>> SIP/2.0 603 Decline To: <sip:Patrik-NB-Linphone@147.175.176.85>;tag=~mzhsZH From: <sip:mobil@147.175.176.85>;tag=ishJ6BZku Call-ID: 5B1~F8Mzix
+2022-02-24 12:45:46:INFO:>>> ACK sip:Patrik-NB-Linphone@147.175.176.85 SIP/2.0 To: <sip:Patrik-NB-Linphone@147.175.176.85>;tag=~mzhsZH From: <sip:mobil@147.175.176.85>;tag=ishJ6BZku Call-ID: 5B1~F8Mzix
+2022-02-24 12:46:34:INFO:>>> INVITE sip:mo@147.175.176.85:5060 SIP/2.0 To: sip:mo@147.175.176.85 From: <sip:Patrik-NB-Linphone@147.175.176.85>;tag=CHLlF6GvO Call-ID: xdGU0pp66S
+2022-02-24 12:46:35:INFO:>>> ACK sip:mo@147.175.176.85:5060 SIP/2.0 To: <sip:mo@147.175.176.85>;tag=123456 From: <sip:Patrik-NB-Linphone@147.175.176.85>;tag=CHLlF6GvO Call-ID: xdGU0pp66S
+2022-02-24 12:46:49:INFO:>>> INVITE sip:mobil@147.175.176.85 SIP/2.0 To: sip:mobil@147.175.176.85 From: <sip:Patrik-NB-Linphone@147.175.176.85>;tag=ypWrwyyUE Call-ID: kIBRUooGSI
+2022-02-24 12:46:53:INFO:>>> SIP/2.0 603 Decline To: <sip:mobil@147.175.176.85>;tag=KG9rSBR From: <sip:Patrik-NB-Linphone@147.175.176.85>;tag=ypWrwyyUE Call-ID: kIBRUooGSI
+2022-02-24 12:46:53:INFO:>>> ACK sip:mobil@147.175.176.85 SIP/2.0 To: <sip:mobil@147.175.176.85>;tag=KG9rSBR From: <sip:Patrik-NB-Linphone@147.175.176.85>;tag=ypWrwyyUE Call-ID: kIBRUooGSI
